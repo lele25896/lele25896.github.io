@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gabriele Giacometti — ML Engineer / Data Scientist</title>
-<meta name="description" content="Portfolio di Gabriele Giacometti, PhD in Fisica Teorica in transizione verso ruoli ML Engineer / Data Scientist.">
+<meta name="description" content="Portfolio of Gabriele Giacometti, PhD in Theoretical Physics transitioning into ML Engineer / Data Scientist roles.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -16,10 +16,10 @@
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     <nav class="nav-links">
       <a href="#about">About</a>
-      <a href="#projects">Progetti</a>
+      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#publications">Pubblicazioni</a>
-      <a href="#contact">Contatti</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -31,8 +31,8 @@
       <img class="avatar" src="assets/photo.jpeg" alt="Gabriele Giacometti" width="140" height="140">
       <div>
         <h1>Gabriele Giacometti</h1>
-        <p class="tagline">PhD in Fisica Teorica → ML Engineer / Data Scientist</p>
-        <p class="pitch">Modellazione di sistemi complessi e rigore analitico applicati a machine learning, forecasting e deployment di modelli in produzione.</p>
+        <p class="tagline">PhD in Theoretical Physics → ML Engineer / Data Scientist</p>
+        <p class="pitch">Complex systems modeling and analytical rigor applied to machine learning, forecasting, and production model deployment.</p>
         <div class="cta">
           <a class="btn btn-primary" href="assets/cv.pdf" download>Download CV</a>
           <a class="btn" href="https://linkedin.com/in/giacomettigabriele" target="_blank" rel="noopener">LinkedIn</a>
@@ -46,26 +46,26 @@
   <section id="about" class="section">
     <h2>About</h2>
     <p>
-      PhD candidate in Fisica Teorica all'Università di Catania (2023–presente), con un percorso di ricerca
-      su modelli matematici per sistemi complessi e simulazioni numeriche. Nel 2025 research intern presso
-      NCBJ Warsaw, con pubblicazione scientifica internazionale.
+      PhD candidate in Theoretical Physics at the University of Catania (2023–present), researching
+      mathematical models for complex systems and numerical simulations. Research intern at
+      NCBJ Warsaw in 2025, resulting in an international scientific publication.
     </p>
     <p>
-      Il background fisico non è un ostacolo alla transizione verso il machine learning: è l'allenamento che
-      la rende naturale. Anni passati a costruire modelli, validarli contro dati reali e ragionare su sistemi
-      non lineari si traducono direttamente in feature engineering, valutazione rigorosa dei modelli e
-      capacità di affrontare problemi mai visti prima.
+      A physics background isn't a detour into machine learning — it's the training that makes the
+      transition natural. Years spent building models, validating them against real data, and reasoning
+      about nonlinear systems translate directly into feature engineering, rigorous model evaluation,
+      and the ability to tackle problems never seen before.
     </p>
   </section>
 
   <section id="projects" class="section">
-    <h2>Progetti</h2>
+    <h2>Projects</h2>
     <div class="cards">
 
       <article class="card">
         <h3>Energy Consumption Forecasting</h3>
         <p class="stack">PyTorch · XGBoost · Prophet · PatchTST · Streamlit</p>
-        <p>Benchmark di 4 modelli di forecasting su 121k ore di dati reali di consumo elettrico, con rollout autoregressivo realistico (672h).</p>
+        <p>Benchmark of 4 forecasting models on 121k hours of real electricity consumption data, with a realistic autoregressive rollout (672h).</p>
         <p class="result">XGBoost + lag features: MAE 983 MW, MAPE 6.40%</p>
         <a class="btn btn-sm" href="https://github.com/lele25896/Energy-Consumption-Forecasting" target="_blank" rel="noopener">View code →</a>
       </article>
@@ -73,30 +73,30 @@
       <article class="card">
         <h3>News Category Classifier</h3>
         <p class="stack">PyTorch · HuggingFace Transformers · Gradio</p>
-        <p>Fine-tuning di DistilBERT per classificazione multi-classe su ~210k articoli (10 categorie). Demo live su HuggingFace Spaces.</p>
-        <p class="result">Macro F1 0.842 (+9.5pp rispetto a baseline TF-IDF)</p>
+        <p>Fine-tuned DistilBERT for multi-class classification on ~210k articles (10 categories). Live demo on HuggingFace Spaces.</p>
+        <p class="result">Macro F1 0.842 (+9.5pp over TF-IDF baseline)</p>
         <a class="btn btn-sm" href="https://github.com/lele25896/news-category-classifier" target="_blank" rel="noopener">View code →</a>
       </article>
 
       <article class="card">
         <h3>Fraud Detection API</h3>
         <p class="stack">PyTorch · FastAPI · Docker · GCP Cloud Run · GitHub Actions</p>
-        <p>Autoencoder non supervisionato per anomaly detection su transazioni sbilanciate, containerizzato e deployato serverless su Cloud Run con CI/CD e Terraform IaC.</p>
-        <p class="result">F1 classe fraud: 0.56 → 0.81</p>
+        <p>Unsupervised autoencoder for anomaly detection on imbalanced transactions, containerized and deployed serverless on Cloud Run with CI/CD and Terraform IaC.</p>
+        <p class="result">Fraud class F1: 0.56 → 0.81</p>
         <a class="btn btn-sm" href="https://github.com/lele25896/Credit-Card-Fraud-Detection-with-Autoencoders" target="_blank" rel="noopener">View code →</a>
       </article>
 
       <article class="card">
         <h3>Local RAG Assistant for Scientific Papers</h3>
         <p class="stack">LangChain · ChromaDB · Ollama (Llama 3) · RAGAS</p>
-        <p>Sistema RAG completamente locale per Q&amp;A su PDF scientifici, con valutazione RAGAS e ablation study su embedding/chunk size. Zero API esterne, zero costo per token.</p>
+        <p>Fully local RAG system for Q&amp;A over scientific PDFs, with RAGAS evaluation and an ablation study on embedding/chunk size. Zero external APIs, zero per-token cost.</p>
         <a class="btn btn-sm" href="https://github.com/lele25896/local-rag-assistant" target="_blank" rel="noopener">View code →</a>
       </article>
 
       <article class="card">
         <h3>Quake Pipeline</h3>
         <p class="stack">Terraform · GCP (Cloud Run, Pub/Sub, BigQuery) · Cloud Scheduler</p>
-        <p>Pipeline event-driven per il rilevamento di anomalie sismiche: ingest dal feed pubblico USGS, scoring z-score della magnitudine e storage in BigQuery, infrastruttura interamente provisionata da Terraform con CI/CD keyless (WIF).</p>
+        <p>Event-driven pipeline for seismic anomaly detection: ingests the public USGS feed, scores magnitude via z-score, and stores results in BigQuery, with infrastructure fully provisioned by Terraform and keyless CI/CD (WIF).</p>
         <a class="btn btn-sm" href="https://github.com/lele25896/quake-pipeline" target="_blank" rel="noopener">View code →</a>
       </article>
 
@@ -115,7 +115,7 @@
   </section>
 
   <section id="publications" class="section">
-    <h2>Pubblicazioni</h2>
+    <h2>Publications</h2>
     <ul class="pub-list">
       <li>
         <a href="https://arxiv.org/abs/2410.08916" target="_blank" rel="noopener">Spontaneous breaking of diffeomorphism invariance in conformally reduced quantum gravity</a>
@@ -127,13 +127,13 @@
       </li>
       <li>
         <a href="https://journals.aps.org/prd/abstract/10.1103/dsgp-mlkp" target="_blank" rel="noopener">On the universal content of the proper time flow in scalar and Yang-Mills theories</a>
-        <span class="pub-authors">Physical Review D — accettato, in attesa di proofs</span>
+        <span class="pub-authors">Physical Review D — accepted, awaiting proofs</span>
       </li>
     </ul>
   </section>
 
   <section id="contact" class="section">
-    <h2>Contatti</h2>
+    <h2>Contact</h2>
     <div class="cta">
       <a class="btn btn-primary" href="mailto:gabriele.giacometti2@gmail.com">gabriele.giacometti2@gmail.com</a>
       <a class="btn" href="https://linkedin.com/in/giacomettigabriele" target="_blank" rel="noopener">LinkedIn</a>
