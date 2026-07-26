@@ -89,6 +89,18 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
 
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
 
+.more-projects { margin-top: 1.25rem; }
+.more-projects summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.9rem;
+  list-style: none;
+}
+.more-projects summary::-webkit-details-marker { display: none; }
+.more-projects summary::before { content: "+ "; }
+.more-projects[open] summary::before { content: "− "; }
+.more-projects .cards { margin-top: 1.25rem; }
+
 .card {
   background: var(--bg-alt);
   border: 1px solid var(--border);
