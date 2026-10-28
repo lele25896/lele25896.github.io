@@ -74,9 +74,9 @@
 
       <article class="card">
         <h3>Energy Consumption Forecasting</h3>
-        <p class="stack">PyTorch · XGBoost · Prophet · PatchTST · Streamlit</p>
-        <p>Benchmark of 4 forecasting models on 121k hours of real electricity consumption data, with a realistic autoregressive rollout (672h).</p>
-        <p class="result">XGBoost + lag features: MAE 983 MW, MAPE 6.40%</p>
+        <p class="stack">PyTorch · XGBoost · Prophet · PatchTST · TimesFM 3.0 · Streamlit</p>
+        <p>Benchmark of 5 forecasting models, including the TimesFM 3.0 foundation model zero-shot, on 121k hours of real electricity consumption data with a realistic 672h rollout, which reverses the ranking from teacher-forced evaluation. Fixed LSTM exposure bias with scheduled sampling (MAPE 27% → 14%).</p>
+        <p class="result">TimesFM zero-shot: MAPE 3.09%; best from-scratch (XGBoost + lags): 6.40%</p>
         <a class="btn btn-sm" href="https://github.com/lele25896/Energy-Consumption-Forecasting" target="_blank" rel="noopener">View code →</a>
       </article>
 
